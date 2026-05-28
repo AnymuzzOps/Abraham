@@ -47,3 +47,6 @@ contactForm.addEventListener('submit', (event) => {
   window.open(url, '_blank');
   msg.textContent = '✓ Se abrirá WhatsApp con tu solicitud. Si no se abre automáticamente, escríbenos directamente.';
 });
+
+setTheme('dark');
+startHeroCarousel();
