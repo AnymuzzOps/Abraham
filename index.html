@@ -3,153 +3,390 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abraham Céspedes Fotografía</title>
-  <meta name="description" content="Portafolio fotográfico de Abraham Céspedes. Matrimonios, sesiones, galerías y cotizaciones." />
+  <meta name="description" content="Arkaius Digital SpA — Soluciones tecnológicas para empresas, pymes y emprendedores. Desarrollo web, automatización con IA, bots, consultoría informática, redes y soporte tecnológico en Chile." />
+  <meta name="keywords" content="consultoría informática, desarrollo web, bots con IA, automatización, redes informáticas, soporte tecnológico, páginas web con IA, Chile, Santiago, Arkaius Digital" />
+  <title>Arkaius Digital SpA — Tecnología, IA, Redes & Desarrollo Web</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio de Arkaius Digital SpA">
+      <span class="brand-mark">A</span>
+      <span>Arkaius Digital SpA</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <a href="#home" class="brand">Abraham Céspedes</a>
-
-    <nav class="desktop-nav" aria-label="Navegación principal">
-      <a href="#home">Home</a>
-      <a href="#cotiza">Cotiza</a>
-      <a href="#matrimonios">Matrimonios</a>
-      <a href="#galerias">Galerías</a>
-      <a href="#contacto">Contacto</a>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre Arkaius</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#precios">Valores</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
-  <nav class="mobile-nav" id="mobileNav" aria-label="Menú móvil">
-    <a href="#home">Home</a>
-    <a href="#cotiza">Cotiza tu sesión</a>
-    <a href="#matrimonios">Matrimonios</a>
-    <a href="#galerias">Galerías</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
   <main>
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Fotografía emocional · natural · elegante</p>
-        <h1>Abraham Céspedes Fotografía</h1>
+    <section class="hero" id="inicio" aria-label="Presentación de Arkaius Digital SpA">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Tecnología aplicada para pymes, negocios y profesionales en Chile</p>
+        <h1>
+          <div>Soluciones digitales</div>
+          <div class="line-cyan">con IA, redes</div>
+          <div class="line-muted">y desarrollo web.</div>
+        </h1>
         <p class="hero-text">
-          Historias reales capturadas con sensibilidad, luz y detalle.
+          Ayudamos a negocios, profesionales y pymes a digitalizar sus servicios, automatizar procesos y fortalecer su infraestructura tecnológica con soluciones claras, modernas y escalables.
         </p>
         <div class="hero-actions">
-          <a href="#galerias" class="btn btn-light">Ver portafolio</a>
-          <a href="#cotiza" class="btn btn-outline">Cotiza tu sesión</a>
+          <a href="#servicios" class="btn btn-primary">Explorar soluciones →</a>
+          <a href="#contacto" class="btn btn-outline">Agendar diagnóstico</a>
+        </div>
+        <div class="hero-pills" aria-label="Capacidades principales">
+          <span>Desarrollo web</span>
+          <span>Bots con IA</span>
+          <span>Redes informáticas</span>
+          <span>Automatización</span>
+          <span>Soporte TI</span>
         </div>
       </div>
     </section>
 
-    <section class="intro section">
-      <p class="section-kicker">Mirada fotográfica</p>
-      <h2>Imágenes que guardan lo que se siente, no solo lo que se ve.</h2>
-      <p>
-        Cada sesión está pensada para crear una experiencia cercana, cuidada y auténtica.
-        Desde matrimonios hasta retratos personales, el objetivo es construir recuerdos visuales
-        con una estética limpia, atemporal y profesional.
+    <section class="section about" id="sobre" aria-label="Sobre Arkaius">
+      <div class="section-head reveal">
+        <div class="section-label">Sobre Arkaius</div>
+        <h2 class="section-title">Tecnología aplicada<br><em>a negocios reales.</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <h3>Tecnología aplicada<br> a negocios reales.</h3>
+          <p>
+            Arkaius Digital SpA nace para acercar la tecnología a empresas, pymes y emprendedores que necesitan soluciones prácticas, modernas y fáciles de implementar.
+            <br><br>
+            Integramos desarrollo web, automatización con inteligencia artificial, consultoría informática, redes y soporte tecnológico para ayudar a que cada negocio trabaje mejor, responda más rápido y tome decisiones con mayor claridad.
+            <br><br>
+            Trabajamos de forma directa, cercana y estratégica: analizamos lo que necesitas, proponemos una solución realista y construimos herramientas pensadas para el uso diario, no solo para verse bien.
+          </p>
+        </div>
+
+        <div class="skills reveal" aria-label="Capacidades de Arkaius Digital SpA">
+          <div class="skill-pill"><span class="dot"></span>Desarrollo web</div>
+          <div class="skill-pill"><span class="dot"></span>Bots con IA</div>
+          <div class="skill-pill"><span class="dot"></span>Automatización</div>
+          <div class="skill-pill"><span class="dot"></span>Consultoría TI</div>
+          <div class="skill-pill"><span class="dot"></span>Redes informáticas</div>
+          <div class="skill-pill"><span class="dot"></span>Soporte tecnológico</div>
+          <div class="skill-pill"><span class="dot"></span>Integraciones digitales</div>
+          <div class="skill-pill"><span class="dot"></span>Soluciones a medida</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios" aria-label="Servicios de Arkaius Digital SpA">
+      <div class="section-head reveal">
+        <div class="section-label">Servicios</div>
+        <h2 class="section-title">Soluciones para<br><em>digitalizar tu negocio.</em></h2>
+        <p class="section-sub">
+          Diseñamos e implementamos soluciones tecnológicas para mejorar tu presencia digital, automatizar tareas, ordenar procesos y fortalecer la infraestructura de tu negocio.
+        </p>
+      </div>
+
+      <div class="services-grid" role="list">
+        <article class="svc-card highlight reveal" role="listitem">
+          <div class="svc-icon" aria-hidden="true">🌐</div>
+          <h3>Desarrollo Web Profesional</h3>
+          <p>Sitios web modernos, rápidos y responsivos para presentar tu negocio, captar clientes y entregar una experiencia clara desde cualquier dispositivo.</p>
+          <div class="svc-price">
+            <span class="desde">Desde</span>
+            <span class="valor"><span class="moneda">$</span>300.000</span>
+            <span class="desde">CLP</span>
+          </div>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="svc-icon" aria-hidden="true">🚀</div>
+          <h3>Landing Pages</h3>
+          <p>Páginas enfocadas en conversión para promocionar servicios, campañas, productos o emprendimientos con una estructura directa y profesional.</p>
+          <div class="svc-price">
+            <span class="desde">Desde</span>
+            <span class="valor"><span class="moneda">$</span>150.000</span>
+            <span class="desde">CLP</span>
+          </div>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="svc-icon" aria-hidden="true">⚙️</div>
+          <h3>Automatización con IA</h3>
+          <p>Flujos automáticos para reducir tareas repetitivas, ordenar solicitudes, conectar formularios, enviar respuestas y mejorar la gestión diaria del negocio.</p>
+          <div class="svc-price">
+            <span class="desde">Desde</span>
+            <span class="valor"><span class="moneda">$</span>180.000</span>
+            <span class="desde">CLP</span>
+          </div>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="svc-icon" aria-hidden="true">🤖</div>
+          <h3>Bots y Asistentes Virtuales</h3>
+          <p>Bots para atención, ventas, preguntas frecuentes, captación de clientes y soporte inicial en canales como WhatsApp, web o plataformas digitales.</p>
+          <div class="svc-price">
+            <span class="desde">Desde</span>
+            <span class="valor"><span class="moneda">$</span>200.000</span>
+            <span class="desde">CLP</span>
+          </div>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="svc-icon" aria-hidden="true">🛜</div>
+          <h3>Redes e Infraestructura</h3>
+          <p>Consultoría, instalación, revisión y mejora de redes informáticas para oficinas, negocios y espacios de trabajo que necesitan conectividad estable y segura.</p>
+          <div class="svc-price">
+            <span class="desde">Desde</span>
+            <span class="valor">A evaluar</span>
+            <span class="desde">según proyecto</span>
+          </div>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="svc-icon" aria-hidden="true">🛠️</div>
+          <h3>Soporte y Consultoría TI</h3>
+          <p>Acompañamiento tecnológico para diagnosticar problemas, mejorar procesos, elegir herramientas, mantener sistemas y tomar mejores decisiones digitales.</p>
+          <div class="svc-price">
+            <span class="desde">Desde</span>
+            <span class="valor"><span class="moneda">$</span>50.000</span>
+            <span class="desde">CLP / mes</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="custom-card reveal">
+        <h3 style="margin-bottom:12px;">¿Necesitas algo más específico?</h3>
+        <p>Si tu proyecto combina web, IA, redes, soporte o automatización, podemos armar una solución a medida según tus objetivos.</p>
+        <a href="#contacto" class="btn btn-outline" style="margin-top:20px;">Evaluar proyecto →</a>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio" aria-label="Enfoque de trabajo">
+      <div class="section-head reveal">
+        <div class="section-label">Enfoque de trabajo</div>
+        <h2 class="section-title">Soluciones pensadas<br><em>para cada operación.</em></h2>
+        <p class="section-sub">
+          No trabajamos con plantillas genéricas. Cada proyecto se analiza según el tipo de negocio, sus procesos, su nivel tecnológico actual y los objetivos que quiere alcanzar.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="pf-card reveal">
+          <div class="pf-body">
+            <span class="pf-tag">Web</span>
+            <h3>Presencia digital</h3>
+            <p>Sitios y landing pages diseñados para explicar mejor lo que haces, recibir contactos y entregar una imagen profesional.</p>
+          </div>
+        </article>
+
+        <article class="pf-card reveal">
+          <div class="pf-body">
+            <span class="pf-tag">IA</span>
+            <h3>Procesos automatizados</h3>
+            <p>Flujos inteligentes para responder, ordenar información, derivar solicitudes y disminuir tareas manuales.</p>
+          </div>
+        </article>
+
+        <article class="pf-card reveal">
+          <div class="pf-body">
+            <span class="pf-tag">Redes</span>
+            <h3>Infraestructura tecnológica</h3>
+            <p>Diagnóstico, instalación y mejora de redes para que la operación diaria sea más estable, conectada y segura.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process" id="proceso" aria-label="Proceso de trabajo">
+      <div class="section-head reveal">
+        <div class="section-label">Proceso</div>
+        <h2 class="section-title">De la idea<br><em>a una solución funcional.</em></h2>
+        <p class="section-sub">Trabajamos con una metodología simple y clara para que cada proyecto tenga dirección, tiempos realistas y resultados concretos.</p>
+      </div>
+
+      <div class="process-grid" role="list">
+        <article class="svc-card reveal" role="listitem">
+          <div class="step">01</div>
+          <h3>Diagnóstico</h3>
+          <p>Revisamos tu necesidad, tus procesos actuales y el objetivo del proyecto para definir qué solución realmente conviene implementar.</p>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="step">02</div>
+          <h3>Propuesta</h3>
+          <p>Ordenamos el alcance, funcionalidades, tiempos y valores para que sepas exactamente qué se va a construir.</p>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="step">03</div>
+          <h3>Implementación</h3>
+          <p>Desarrollamos, configuramos e integramos la solución, manteniendo comunicación clara durante todo el proceso.</p>
+        </article>
+
+        <article class="svc-card reveal" role="listitem">
+          <div class="step">04</div>
+          <h3>Soporte y mejora</h3>
+          <p>Probamos, ajustamos y acompañamos la puesta en marcha para que la solución funcione en el uso real del negocio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pricing" id="precios" aria-label="Valores referenciales">
+      <div class="section-head reveal">
+        <div class="section-label">Valores</div>
+        <h2 class="section-title">Valores <em>referenciales.</em></h2>
+        <p class="section-sub">
+          Cada proyecto tiene necesidades distintas. Estos valores sirven como referencia inicial y pueden variar según alcance, urgencia, integraciones, soporte requerido y nivel de personalización.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>Inicio Digital</h3>
+          <p>Ideal para emprendedores o negocios que necesitan comenzar con una presencia profesional.</p>
+          <div class="price">Desde $150.000</div>
+          <ul>
+            <li>Landing page o sitio simple</li>
+            <li>Diseño responsive</li>
+            <li>Formulario o botón de contacto</li>
+            <li>Botón de WhatsApp</li>
+            <li>Estructura básica de SEO</li>
+          </ul>
+        </article>
+
+        <article class="price-card popular reveal">
+          <span class="popular-badge">Popular</span>
+          <h3>Negocio Digital</h3>
+          <p>Para empresas y pymes que necesitan una solución más completa, ordenada y escalable.</p>
+          <div class="price">Desde $300.000</div>
+          <ul>
+            <li>Sitio web profesional</li>
+            <li>3 a 5 secciones</li>
+            <li>Formulario de contacto</li>
+            <li>Integraciones básicas</li>
+            <li>Google Analytics o medición inicial</li>
+            <li>1 mes de soporte</li>
+          </ul>
+        </article>
+
+        <article class="price-card reveal">
+          <h3>Automatización / IA</h3>
+          <p>Para negocios que quieren ahorrar tiempo, responder mejor y automatizar tareas repetitivas.</p>
+          <div class="price">Desde $180.000</div>
+          <ul>
+            <li>Flujo automatizado inicial</li>
+            <li>Bot o asistente básico</li>
+            <li>Integración con formulario, WhatsApp o correo</li>
+            <li>Configuración personalizada</li>
+            <li>Pruebas y ajustes incluidos</li>
+          </ul>
+        </article>
+
+        <article class="price-card reveal">
+          <h3>Redes / Soporte TI</h3>
+          <p>Para oficinas, negocios o equipos que necesitan mejorar su conectividad y soporte tecnológico.</p>
+          <div class="price">A evaluar</div>
+          <ul>
+            <li>Diagnóstico técnico</li>
+            <li>Instalación o mejora de red</li>
+            <li>Revisión de conectividad</li>
+            <li>Soporte remoto o presencial según caso</li>
+            <li>Propuesta según infraestructura</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="price-note reveal">
+        Los valores publicados son referenciales. Todo proyecto se cotiza según alcance, funcionalidades, integraciones, tiempos de entrega, soporte requerido y condiciones técnicas.
       </p>
     </section>
 
-    <section class="section split" id="matrimonios">
-      <div class="split-text">
-        <p class="section-kicker">Matrimonios</p>
-        <h2>Fotografía para bodas con una mirada íntima y elegante.</h2>
-        <p>
-          Cobertura pensada para capturar momentos espontáneos, detalles importantes,
-          emociones reales y la esencia de cada pareja.
-        </p>
-        <a href="#cotiza" class="text-link">Consultar disponibilidad</a>
-      </div>
-      <div class="split-image image-card tall"></div>
-    </section>
-
-    <section class="section" id="galerias">
-      <div class="section-heading">
-        <p class="section-kicker">Galerías</p>
-        <h2>Portafolio destacado</h2>
-        <p>Una selección visual para mostrar el estilo, la luz y la composición del trabajo fotográfico.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item item-1"><span>Matrimonios</span></div>
-        <div class="gallery-item item-2"><span>Retratos</span></div>
-        <div class="gallery-item item-3"><span>Eventos</span></div>
-        <div class="gallery-item item-4"><span>Sesiones</span></div>
-        <div class="gallery-item item-5"><span>Detalles</span></div>
-        <div class="gallery-item item-6"><span>Editorial</span></div>
-      </div>
-    </section>
-
-    <section class="quote-section" id="cotiza">
+    <section class="cta reveal" aria-label="Llamado a la acción">
       <div>
-        <p class="section-kicker">Cotiza tu sesión</p>
-        <h2>Cuéntame tu idea y creemos una experiencia fotográfica a tu medida.</h2>
+        <h2>¿Tu negocio necesita una solución tecnológica real?</h2>
         <p>
-          Puedes solicitar información sobre matrimonios, sesiones personales, eventos
-          o proyectos especiales.
+          Podemos ayudarte a crear tu sitio web, automatizar procesos, implementar bots con IA, mejorar tu red o definir una estrategia tecnológica clara para tu negocio.
         </p>
       </div>
-      <a class="btn btn-dark" href="https://wa.me/56900000000" target="_blank" rel="noopener">
-        Cotizar por WhatsApp
-      </a>
+      <a href="#contacto" class="btn btn-primary">Solicitar diagnóstico →</a>
     </section>
 
-    <section class="section contact" id="contacto">
-      <div class="section-heading">
-        <p class="section-kicker">Contacto</p>
-        <h2>Hablemos de tu próxima sesión</h2>
+    <section class="section contact" id="contacto" aria-label="Contacto">
+      <div class="section-head reveal">
+        <div class="section-label">Contacto</div>
+        <h2 class="section-title">Hablemos de<br><em>tu necesidad tecnológica.</em></h2>
       </div>
 
-      <form class="contact-form">
-        <label>
-          Nombre
-          <input type="text" name="nombre" placeholder="Tu nombre" required />
-        </label>
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <h3>Cuéntanos qué quieres mejorar, crear o automatizar.</h3>
+          <p>
+            Te responderemos con una orientación clara y una propuesta inicial según el tipo de proyecto: web, IA, automatización, redes, soporte o consultoría informática.
+          </p>
+          <div class="contact-lines">
+            <a href="mailto:contacto@arkaiusdigital.cl">contacto@arkaiusdigital.cl</a>
+            <a href="https://wa.me/56900000000" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
 
-        <label>
-          Correo
-          <input type="email" name="correo" placeholder="tu@email.com" required />
-        </label>
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre o empresa" required />
+          </label>
 
-        <label>
-          Tipo de sesión
-          <select name="tipo">
-            <option>Matrimonio</option>
-            <option>Retrato</option>
-            <option>Evento</option>
-            <option>Sesión personal</option>
-            <option>Otro</option>
-          </select>
-        </label>
+          <label>
+            Correo
+            <input type="email" name="correo" placeholder="tu@email.com" required />
+          </label>
 
-        <label>
-          Mensaje
-          <textarea name="mensaje" rows="5" placeholder="Cuéntame qué necesitas"></textarea>
-        </label>
+          <label>
+            Servicio
+            <select name="servicio" required>
+              <option value="">Selecciona un servicio...</option>
+              <option value="Landing Page">Landing Page</option>
+              <option value="Sitio Web Profesional">Sitio Web Profesional</option>
+              <option value="Automatización con IA">Automatización con IA</option>
+              <option value="Bot o asistente virtual">Bot o asistente virtual</option>
+              <option value="Redes e infraestructura">Redes e infraestructura</option>
+              <option value="Consultoría informática">Consultoría informática</option>
+              <option value="Soporte / Mantención TI">Soporte / Mantención TI</option>
+              <option value="Otro / No lo sé aún">Otro / No lo sé aún</option>
+            </select>
+          </label>
 
-        <button type="submit" class="btn btn-dark">Enviar mensaje</button>
-      </form>
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas mejorar, crear o automatizar. Puedes incluir tu rubro, plazo, presupuesto estimado o problema actual." required></textarea>
+          </label>
 
-      <div class="social-links">
-        <a href="#" target="_blank" rel="noopener">Instagram</a>
-        <a href="mailto:contacto@abrahamcespedes.cl">Correo</a>
-        <a href="https://wa.me/56900000000" target="_blank" rel="noopener">WhatsApp</a>
+          <button type="submit" class="btn btn-primary">Preparar solicitud por WhatsApp</button>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Abraham Céspedes Fotografía. Todos los derechos reservados.</p>
+    <a class="brand" href="#inicio" aria-label="Ir al inicio de Arkaius Digital SpA">
+      <span class="brand-mark">A</span>
+      <span>Arkaius Digital SpA</span>
+    </a>
+    <span class="footer-copy">© 2026 Arkaius Digital SpA — Soluciones tecnológicas</span>
   </footer>
 
   <script src="script.js"></script>
