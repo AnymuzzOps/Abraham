@@ -7,9 +7,9 @@
   <meta name="description" content="Portafolio fotográfico de Abraham Céspedes. Matrimonios, sesiones, galerías y cotizaciones." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="theme-dark">
   <header class="site-header">
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -24,6 +24,11 @@
       <a href="#galerias">Galerías</a>
       <a href="#contacto">Contacto</a>
     </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="true">
+      <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+      <span class="theme-toggle__text">Oscuro</span>
+    </button>
   </header>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Menú móvil">
@@ -35,7 +40,12 @@
   </nav>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero" id="home" aria-label="Portada fotográfica destacada">
+      <div class="hero-carousel" aria-hidden="true">
+        <div class="hero-slide hero-slide-1"></div>
+        <div class="hero-slide hero-slide-2"></div>
+        <div class="hero-slide hero-slide-3"></div>
+      </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="eyebrow">Fotografía emocional · natural · elegante</p>
