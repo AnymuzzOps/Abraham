@@ -525,7 +525,8 @@ a {
 .social-links {
   margin-top: 36px;
   display: flex;
-  gap: 22px;
+  flex-wrap: wrap;
+  gap: 14px 22px;
   font-family: var(--font-sans);
   text-transform: uppercase;
   letter-spacing: 0.12em;
