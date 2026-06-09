@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abraham Céspedes Fotografía</title>
-  <meta name="description" content="Portafolio fotográfico de Abraham Céspedes. Matrimonios, sesiones, galerías y cotizaciones." />
+  <title>Abraham Antua Fotografía</title>
+  <meta name="description" content="Portafolio fotográfico de Abraham Antua. Matrimonios, sesiones, galerías y cotizaciones." />
+  <link rel="canonical" href="https://abrahamantua.cl" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="theme-dark">
@@ -15,13 +16,14 @@
       <span></span>
     </button>
 
-    <a href="#home" class="brand">Abraham Céspedes</a>
+    <a href="#home" class="brand">Abraham Antua</a>
 
     <nav class="desktop-nav" aria-label="Navegación principal">
       <a href="#home">Home</a>
       <a href="#cotiza">Cotiza</a>
       <a href="#matrimonios">Matrimonios</a>
       <a href="#galerias">Galerías</a>
+      <a href="#sobre-mi">Sobre mí</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
@@ -36,6 +38,7 @@
     <a href="#cotiza">Cotiza tu sesión</a>
     <a href="#matrimonios">Matrimonios</a>
     <a href="#galerias">Galerías</a>
+    <a href="#sobre-mi">Sobre mí</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -49,7 +52,7 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="eyebrow">Fotografía emocional · natural · elegante</p>
-        <h1>Abraham Céspedes Fotografía</h1>
+        <h1>Abraham Antua Fotografía</h1>
         <p class="hero-text">
           Historias reales capturadas con sensibilidad, luz y detalle.
         </p>
@@ -90,26 +93,56 @@
         <p>Una selección visual para mostrar el estilo, la luz y la composición del trabajo fotográfico.</p>
       </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-item item-1"><span>Matrimonios</span></div>
-        <div class="gallery-item item-2"><span>Retratos</span></div>
-        <div class="gallery-item item-3"><span>Eventos</span></div>
-        <div class="gallery-item item-4"><span>Sesiones</span></div>
-        <div class="gallery-item item-5"><span>Detalles</span></div>
-        <div class="gallery-item item-6"><span>Editorial</span></div>
+      <div class="gallery-grid gallery-grid--four">
+        <div class="gallery-item item-sesiones"><span>Sesiones</span></div>
+        <div class="gallery-item item-preboda"><span>Pre boda</span></div>
+        <div class="gallery-item item-matrimonio"><span>Matrimonio</span></div>
+        <div class="gallery-item item-retrato"><span>Retrato</span></div>
       </div>
+    </section>
+
+    <section class="section about" id="sobre-mi">
+      <div class="about-copy">
+        <p class="section-kicker">Sobre mí</p>
+        <h2>Fotógrafo de emociones reales</h2>
+        <p>
+          Soy Abraham Antua, fotógrafo apasionado por capturar emociones que merecen ser
+          recordadas para siempre en su estado más puro y natural.
+        </p>
+        <p>
+          Con más de 4 años de experiencia en fotografía, entiendo este oficio como una forma
+          de detener el tiempo y convertir momentos simples en recuerdos eternos.
+        </p>
+        <p>
+          Mi estilo mezcla la esencia humana con la belleza de la naturaleza para crear imágenes
+          auténticas, sensibles y llenas de vida. Cada sesión es una oportunidad para contar
+          historias reales a través de miradas, gestos y emociones espontáneas.
+        </p>
+        <p>
+          Tengo una conexión especial con parejas completamente enamoradas: me inspira capturar
+          ese amor genuino, los detalles invisibles y la complicidad que aparece cuando dos
+          personas se sienten libres de ser ellas mismas.
+        </p>
+        <p>
+          Más que fotografías, busco crear recuerdos que puedan sentirse incluso con el paso de
+          los años, porque las emociones verdaderas nunca pasan de moda.
+        </p>
+      </div>
+      <figure class="about-photo" aria-label="Fotografía de perfil de Abraham Antua">
+        <img src="fotoperfil.jpg" alt="Abraham Antua, fotógrafo" />
+      </figure>
     </section>
 
     <section class="quote-section" id="cotiza">
       <div>
         <p class="section-kicker">Cotiza tu sesión</p>
-        <h2>Cuéntame tu idea y creemos una experiencia fotográfica a tu medida.</h2>
+        <h2>Cuéntame tu idea y diseñemos una experiencia fotográfica juntos.</h2>
         <p>
-          Puedes solicitar información sobre matrimonios, sesiones personales, eventos
+          Puedes solicitar información sobre sesiones, pre boda, matrimonio, retrato
           o proyectos especiales.
         </p>
       </div>
-      <a class="btn btn-dark" href="https://wa.me/56900000000" target="_blank" rel="noopener">
+      <a class="btn btn-dark btn-whatsapp" href="https://wa.me/56956303238" target="_blank" rel="noopener">
         Cotizar por WhatsApp
       </a>
     </section>
@@ -134,11 +167,10 @@
         <label>
           Tipo de sesión
           <select name="tipo">
+            <option>Sesiones</option>
+            <option>Pre boda</option>
             <option>Matrimonio</option>
             <option>Retrato</option>
-            <option>Evento</option>
-            <option>Sesión personal</option>
-            <option>Otro</option>
           </select>
         </label>
 
@@ -150,16 +182,29 @@
         <button type="submit" class="btn btn-dark">Enviar mensaje</button>
       </form>
 
-      <div class="social-links">
-        <a href="#" target="_blank" rel="noopener">Instagram</a>
-        <a href="mailto:contacto@abrahamcespedes.cl">Correo</a>
-        <a href="https://wa.me/56900000000" target="_blank" rel="noopener">WhatsApp</a>
+      <div class="contact-methods" aria-label="Medios de contacto">
+        <a class="contact-method" href="https://www.instagram.com/abraham_antua_fotografo" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">◎</span>
+          <span>@abraham_antua_fotografo</span>
+        </a>
+        <a class="contact-method" href="mailto:abrahamantua@gmail.com">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <span>abrahamantua@gmail.com</span>
+        </a>
+        <a class="contact-method" href="https://wa.me/56956303238" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">☏</span>
+          <span>+569 5630 3238</span>
+        </a>
+        <a class="contact-method" href="https://abrahamantua.cl" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">⌂</span>
+          <span>abrahamantua.cl</span>
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Abraham Céspedes Fotografía. Todos los derechos reservados.</p>
+    <p>© 2026 Abraham Antua Fotografía. Todos los derechos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
