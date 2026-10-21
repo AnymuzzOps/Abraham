@@ -117,7 +117,10 @@ button, input, select, textarea { font: inherit; }
 .hero-carousel { z-index: -2; }
 .hero-slide { opacity: 0; transform: scale(1.015); background: center 42% / cover no-repeat; transition: opacity 1.3s ease, transform 7s ease; }
 .hero-slide.active { opacity: 1; transform: scale(1.04); }
-.hero-slide-1 { background-image: url('portada.jpg'), linear-gradient(115deg, #17130f, #33281d 48%, #0d0d0c); }
+.hero-slide-1 {
+  /* portada.jpg is the intended cover; the tracked profile photo prevents an empty hero if that asset is unavailable. */
+  background-image: url('portada.jpg'), url('fotoperfil.jpg'), linear-gradient(115deg, #17130f, #33281d 48%, #0d0d0c);
+}
 .hero-overlay { z-index: -1; background: linear-gradient(180deg, rgba(5,5,5,.48), rgba(5,5,5,.32) 45%, rgba(5,5,5,.72)), linear-gradient(90deg, rgba(0,0,0,.2), transparent 50%, rgba(0,0,0,.2)); }
 .hero-content { max-width: 680px; animation: reveal-up .9s ease both; }
 @keyframes reveal-up { from { opacity: 0; transform: translateY(16px); } }
