@@ -49,6 +49,8 @@ function startHeroCarousel() {
 
   showSlide(activeSlide);
 
+  if (heroSlides.length === 1) return;
+
   window.setInterval(() => {
     activeSlide = (activeSlide + 1) % heroSlides.length;
     showSlide(activeSlide);
