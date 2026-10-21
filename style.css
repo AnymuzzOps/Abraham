@@ -115,12 +115,9 @@ button, input, select, textarea { font: inherit; }
 }
 .hero-carousel, .hero-slide, .hero-overlay { position: absolute; inset: 0; }
 .hero-carousel { z-index: -2; }
-.hero-slide { opacity: 0; transform: scale(1.015); background: center / cover no-repeat; transition: opacity 1.3s ease, transform 7s ease; }
+.hero-slide { opacity: 0; transform: scale(1.015); background: center 42% / cover no-repeat; transition: opacity 1.3s ease, transform 7s ease; }
 .hero-slide.active { opacity: 1; transform: scale(1.04); }
-/* Superficies internas reemplazables: no se cargan fotografías de stock externas. */
-.hero-slide-1 { background-image: radial-gradient(circle at 22% 50%, rgba(139,107,67,.52), transparent 23%), radial-gradient(circle at 74% 32%, rgba(87,74,53,.58), transparent 28%), linear-gradient(115deg, #17130f, #33281d 48%, #0d0d0c); }
-.hero-slide-2 { background-image: radial-gradient(circle at 70% 38%, rgba(126,94,53,.48), transparent 25%), linear-gradient(125deg, #11100e 15%, #40301f 52%, #10100f); }
-.hero-slide-3 { background-image: radial-gradient(circle at 35% 30%, rgba(112,87,58,.5), transparent 26%), linear-gradient(110deg, #0c0d0d, #2e271f 55%, #11100f); }
+.hero-slide-1 { background-image: url('portada.jpg'), linear-gradient(115deg, #17130f, #33281d 48%, #0d0d0c); }
 .hero-overlay { z-index: -1; background: linear-gradient(180deg, rgba(5,5,5,.48), rgba(5,5,5,.32) 45%, rgba(5,5,5,.72)), linear-gradient(90deg, rgba(0,0,0,.2), transparent 50%, rgba(0,0,0,.2)); }
 .hero-content { max-width: 680px; animation: reveal-up .9s ease both; }
 @keyframes reveal-up { from { opacity: 0; transform: translateY(16px); } }
