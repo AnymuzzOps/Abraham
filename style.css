@@ -176,13 +176,19 @@ body.theme-light #galerias { background: var(--surface-soft); }
 .gallery-item:hover::before { transform: scale(1.025); filter: brightness(1.1); }
 .gallery-item span { position: absolute; z-index: 1; left: 20px; right: 20px; bottom: 20px; display: flex; align-items: center; gap: 10px; color: #fff; font-size: .63rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
 .gallery-item span::after { content: ''; width: 4px; height: 4px; margin-left: auto; border-radius: 50%; background: var(--accent); }
-.item-sesiones { background-image: linear-gradient(115deg, #08090a 12%, #403e3b 48%, #121314 49%, #252525); }
-.item-preboda { background-image: radial-gradient(circle at 62% 38%, rgba(175,142,95,.44), transparent 18%), linear-gradient(145deg, #171713, #705539 55%, #191613); }
+.item-sesiones {
+  background-image: url('gruposesion.jpg'), linear-gradient(115deg, #08090a 12%, #403e3b 48%, #121314 49%, #252525);
+}
+.item-preboda {
+  background-image: url('grupopreboda.jpg'), radial-gradient(circle at 62% 38%, rgba(175,142,95,.44), transparent 18%), linear-gradient(145deg, #171713, #705539 55%, #191613);
+}
 .item-matrimonio {
-  background-image: url('bodas.jpg'), linear-gradient(90deg, #2a211a 0 12%, #75583b 13% 16%, #32291f 17% 48%, #806345 49% 54%, #241d17 55%);
+  background-image: url('grupomatri.jpg'), url('bodas.jpg'), linear-gradient(90deg, #2a211a 0 12%, #75583b 13% 16%, #32291f 17% 48%, #806345 49% 54%, #241d17 55%);
   background-position: center 44%;
 }
-.item-retrato { background-image: radial-gradient(circle at 65% 43%, rgba(82,96,104,.42), transparent 24%), linear-gradient(150deg, #17212a, #27333b 52%, #080b0e); }
+.item-retrato {
+  background-image: url('gruporetrato.jpg'), radial-gradient(circle at 65% 43%, rgba(82,96,104,.42), transparent 24%), linear-gradient(150deg, #17212a, #27333b 52%, #080b0e);
+}
 
 .about { display: grid; grid-template-columns: minmax(360px, .82fr) minmax(440px, 1.18fr); gap: clamp(52px, 6.5vw, 92px); align-items: center; }
 .about-copy { grid-column: 2; }
