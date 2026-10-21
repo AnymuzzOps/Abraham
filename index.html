@@ -46,8 +46,6 @@
     <section class="hero" id="home" aria-label="Portada fotográfica destacada">
       <div class="hero-carousel" aria-hidden="true">
         <div class="hero-slide hero-slide-1"></div>
-        <div class="hero-slide hero-slide-2"></div>
-        <div class="hero-slide hero-slide-3"></div>
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -184,7 +182,13 @@
 
       <div class="contact-methods" aria-label="Medios de contacto">
         <a class="contact-method" href="https://www.instagram.com/abraham_antua_fotografo" target="_blank" rel="noopener">
-          <span class="contact-icon" aria-hidden="true">◎</span>
+          <span class="contact-icon contact-icon--instagram" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </span>
           <span>@abraham_antua_fotografo</span>
         </a>
         <a class="contact-method" href="mailto:abrahamantua@gmail.com">
@@ -205,6 +209,7 @@
 
   <footer class="footer">
     <p>© 2026 Abraham Antua Fotografía. Todos los derechos reservados.</p>
+    <span class="footer-brand">Abraham Antua</span>
   </footer>
 
   <script src="script.js"></script>
