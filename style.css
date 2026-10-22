@@ -229,7 +229,8 @@ body.theme-light #galerias { background: var(--surface-soft); }
 .contact-method:hover { color: var(--text); border-color: rgba(213,174,50,.35); transform: translateX(2px); }
 .contact-icon { flex: 0 0 34px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: rgba(213,174,50,.1); color: var(--accent); font-size: .9rem; }
 .contact-icon--instagram { color: #d5ae32; }
-.contact-icon svg { width: 17px; height: 17px; display: block; color: inherit; stroke-linecap: round; stroke-linejoin: round; }
+.contact-icon svg { width: 14px; height: 14px; display: block; color: inherit; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.contact-icon--instagram svg { width: 17px; height: 17px; stroke-width: 1.8; }
 .footer { width: min(calc(100% - clamp(48px, 9vw, 128px)), var(--container)); margin: auto; padding: 32px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .64rem; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .footer-brand { color: rgba(244,241,235,.42); font-family: var(--font-display); font-size: .9rem; letter-spacing: .04em; text-transform: uppercase; }
 
