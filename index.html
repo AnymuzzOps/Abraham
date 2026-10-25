@@ -6,9 +6,13 @@
   <title>Abraham Antua Fotografía</title>
   <meta name="description" content="Portafolio fotográfico de Abraham Antua. Matrimonios, sesiones, galerías y cotizaciones." />
   <link rel="canonical" href="https://abrahamantua.cl" />
+  <link rel="preload" as="image" href="portada.jpg" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="theme-dark">
+<body>
   <header class="site-header">
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mobileNav" aria-expanded="false">
       <span></span>
@@ -27,10 +31,6 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="true">
-      <span class="theme-toggle__icon" aria-hidden="true">☾</span>
-      <span class="theme-toggle__text">Oscuro</span>
-    </button>
   </header>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Menú móvil">
@@ -45,7 +45,9 @@
   <main>
     <section class="hero" id="home" aria-label="Portada fotográfica destacada">
       <div class="hero-carousel" aria-hidden="true">
-        <div class="hero-slide hero-slide-1"></div>
+        <div class="hero-slide hero-slide-1 active">
+          <img src="portada.jpg" alt="" fetchpriority="high" decoding="async" />
+        </div>
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -81,7 +83,9 @@
         </p>
         <a href="#cotiza" class="text-link">Consultar disponibilidad</a>
       </div>
-      <div class="split-image image-card tall"></div>
+      <div class="split-image image-card tall">
+        <img src="bodas.jpg" alt="" loading="lazy" decoding="async" />
+      </div>
     </section>
 
     <section class="section" id="galerias">
@@ -92,10 +96,10 @@
       </div>
 
       <div class="gallery-grid gallery-grid--four">
-        <div class="gallery-item item-sesiones"><span>Sesiones</span></div>
-        <div class="gallery-item item-preboda"><span>Pre boda</span></div>
-        <div class="gallery-item item-matrimonio"><span>Matrimonio</span></div>
-        <div class="gallery-item item-retrato"><span>Retrato</span></div>
+        <div class="gallery-item item-sesiones"><img src="gruposesion.jpg" alt="" loading="lazy" decoding="async" /><span>Sesiones</span></div>
+        <div class="gallery-item item-preboda"><img src="grupopreboda.jpg" alt="" loading="lazy" decoding="async" /><span>Pre boda</span></div>
+        <div class="gallery-item item-matrimonio"><img src="grupomatri.jpg" alt="" loading="lazy" decoding="async" /><span>Matrimonio</span></div>
+        <div class="gallery-item item-retrato"><img src="gruporetrato.jpg" alt="" loading="lazy" decoding="async" /><span>Retrato</span></div>
       </div>
     </section>
 
@@ -127,7 +131,7 @@
         </p>
       </div>
       <figure class="about-photo" aria-label="Fotografía de perfil de Abraham Antua">
-        <img src="fotoperfil.jpg" alt="Abraham Antua, fotógrafo" />
+        <img src="fotoperfil.jpg" alt="Abraham Antua, fotógrafo" width="1068" height="1600" loading="lazy" decoding="async" />
       </figure>
     </section>
 
@@ -227,6 +231,6 @@
     <span class="footer-brand">Abraham Antua</span>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
